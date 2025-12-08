@@ -8,3 +8,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+// __activity_fill_marker__ 2025-12-08 1
