@@ -29,13 +29,13 @@ const Home: NextPage = () => {
 
                 <div style={{ display: 'flex', gap: '1.6rem' }}>
                     <Link href="/" locale="en">
-                        <a>English</a>
+                        English
                     </Link>
                     <Link href="/" locale="ms">
-                        <a>Bahasa Malaysia</a>
+                        Bahasa Malaysia
                     </Link>
                     <Link href="/" locale="cn">
-                        <a>Chinese</a>
+                        Chinese
                     </Link>
                 </div>
 
