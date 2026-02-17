@@ -1,46 +1,46 @@
 {
-  "name": "nextjs-ztemplate",
-  "author": "Zaki Hanafiah <zaki@zakhov.com> (https://zakhov.com/)",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prettify": "prettier --write pages/**/*.ts{,x}",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "next": "^15.1.6",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@next/eslint-plugin-next": "^16.1.6",
-    "@types/node": "^22.10.5",
-    "@types/react": "^19.0.6",
-    "@typescript-eslint/eslint-plugin": "^8.20.0",
-    "eslint": "^9.18.0",
-    "eslint-config-next": "^15.1.6",
-    "eslint-config-prettier": "^10.0.1",
-    "globals": "^17.3.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.4.1",
-    "prettier": "^3.4.2",
-    "pretty-quick": "^4.0.0",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.56.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "nextjs-ztemplate",
+    "author": "Zaki Hanafiah <zaki@zakhov.com> (https://zakhov.com/)",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prettify": "prettier --write pages/**/*.ts{,x}",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "next": "^15.1.6",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@next/eslint-plugin-next": "^16.1.6",
+        "@types/node": "^22.10.5",
+        "@types/react": "^19.0.6",
+        "@typescript-eslint/eslint-plugin": "^8.20.0",
+        "eslint": "^9.18.0",
+        "eslint-config-next": "^15.1.6",
+        "eslint-config-prettier": "^10.0.1",
+        "globals": "^17.3.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.4.1",
+        "prettier": "^3.4.2",
+        "pretty-quick": "^4.0.0",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.56.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx}": [
+            "eslint --quiet --fix --max-warnings=-1",
+            "pretty-quick --staged"
+        ]
     }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --quiet --fix",
-      "pretty-quick --staged"
-    ]
-  }
 }

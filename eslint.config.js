@@ -7,6 +7,7 @@ export default tseslint.config(
     {
         ignores: ['.next/**', 'node_modules/**'],
     },
+    ...tseslint.configs.recommended,
     {
         files: ['**/*.{js,jsx,ts,tsx}'],
         languageOptions: {
@@ -21,9 +22,8 @@ export default tseslint.config(
         rules: {
             ...eslintConfigPrettier.rules,
             '@next/next/no-html-link-for-pages': 'off',
-            '@typescript-eslint/naming-convention': 'off',
-            '@typescript-eslint/no-unused-vars': 'warn',
-            '@typescript-eslint/no-explicit-any': 'warn',
+            '@typescript-eslint/no-unused-vars': 'off',
+            '@typescript-eslint/no-explicit-any': 'off',
         },
     }
 )
