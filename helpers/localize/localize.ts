@@ -18,3 +18,4 @@ const getLang = (router: NextRouter) => {
 }
 
 export default getLang
+// __afill_20260311_1230__
